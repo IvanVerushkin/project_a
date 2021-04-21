@@ -11,10 +11,10 @@ html{
  
 ul[class],
 li[class] {
-    padding: 0;
     list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, ul, ol, figure, figcaption, blockquote, dl, dd {
     margin: 0;
+    font-size: inherit;
 }

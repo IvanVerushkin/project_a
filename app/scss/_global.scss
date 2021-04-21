@@ -1,9 +1,7 @@
-@import 'global';
-@import 'reset';
- 
 a {
     display: inline-block;
     text-decoration: none;
+    
 }
 
 button {
@@ -14,12 +12,13 @@ button {
 
 body {
     height: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    color: $dark;
+    color: #5a5a5a;
     background-color: #fff;
     overflow-x: hidden;
+    min-width: 320px;
 }
  
 .wrapper {
@@ -43,4 +42,33 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        margin: 0 15px;
+    }
+    button {
+        background-color: #363838;
+        border: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+    }
+    li.slick-active {
+        button {
+            background-color: #FFEF35;
+        }
+    }
 }
