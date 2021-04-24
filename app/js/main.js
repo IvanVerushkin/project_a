@@ -15,3 +15,9 @@ $('.top__slider').slick ({
     dots: true,
     arrows: false,
 });
+
+let mixer = mixitup('.gallery__inner', {
+    load: {
+        filter: '.bedroom'
+    }
+});
